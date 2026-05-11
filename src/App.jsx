@@ -3,6 +3,7 @@ import {
   ComposedChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ReferenceLine, ResponsiveContainer, BarChart, Bar, Cell, AreaChart, Legend
 } from "recharts";
+import { Analytics } from "@vercel/analytics/react";
 
 // ══════════════════════════════════════════════════════════════════
 //  VERIFIED MATH ENGINE
@@ -718,6 +719,7 @@ export default function App() {
           <span key={s} style={{ fontSize: 9, fontFamily: T.mono, color: T.muted, letterSpacing: 0.5 }}>{s}</span>
         ))}
       </div>
+      <Analytics />
     </div>
   );
 }
